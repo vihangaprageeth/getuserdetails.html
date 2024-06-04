@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Details - Page 2</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+<div class="container">
+    <div class="user-details">
+        <form action="submit.php" method="post" class="user-details"> <!-- Changed action to where you want to submit the data -->
+            <!-- Select education level -->
+            <div class="form-group">
+                <p id="quest">Select your Education level:</p>
+                <select name="role" id="dropdown" class="formControl" required>
+                    <option value="" disabled selected>Select your Education level:</option>
+                    <option value="Certifications or Licenses">Certifications or Licenses</option>
+                    <option value="Graduation Year">Graduation Year</option>
+                    <option value="Educational Institution">Educational Institution</option>
+                    <option value="Field of Study or Major">Field of Study or Major</option>
+                    <option value="Highest Level of Education Attained">Highest Level of Education Attained</option>
+                </select>
+            </div>
+            <br>
+            <!-- Enter user name -->
+            <div>
+                <label for="title">Enter user name:</label>
+                <!-- Facebook -->
+                <div>
+                    <label for="Facebook">Facebook:</label>
+                    <input type="name" id="Facebook" name="Facebook" placeholder="Vihanga_prageeth.">
+                </div>
+                <br>
+                <!-- Instagram -->
+                <div>
+                    <label for="Instagram">Instagram:</label>
+                    <input type="name" id="Instagram" name="Instagram" placeholder="vihangaprageeth39">
+                </div>
+                <br>
+                <!-- Github -->
+                <div>
+                    <label for="Github">Github:</label>
+                    <input type="name" id="Github" name="Github" placeholder="vihangaprageeth">
+                </div>
+                <br>
+            </div>
+            <br>
+            <!-- Back button -->
+            <button type="button" id="backButton">Back</button>
+            <!-- Submit button -->
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+    <div class="panel-container"></div>
+</div>
+
+<script>
+    // Add JavaScript to handle the back button click event
+    document.getElementById("backButton").addEventListener("click", function() {
+        // Navigate to the previous page when the button is clicked
+        window.history.back();
+    });
+</script>
+
+</body>
+</html>
